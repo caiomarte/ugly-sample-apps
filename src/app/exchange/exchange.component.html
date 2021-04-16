@@ -1,0 +1,113 @@
+<div class="card bg-secondary">
+    <div class="card-body">
+        <h2>
+            <span class="badge bg-light">
+                <p>Provide a value</p>
+                <select (change)="selectExchangeCurrency($event)" class="form-select bg-success rounded-pill">
+                    <option selected>$</option>
+                    <option>R$</option>
+                    <option>US$</option>
+                    <option>€$</option>
+                    <option>£$</option>
+                </select>
+                <span>
+                    <input (change)="selectExchangeCurrencyValue($event)" type="text" class="form-control" [value]="exchangeCurrencyValue">
+                </span>
+            </span>
+           
+            <span class="badge" id="exchange-icon">
+                <img src="/assets/icons/exchange.svg">
+            </span>
+            
+            <span class="badge bg-light">
+                <p>Expect a value</p>
+                <select (change)="selectDesiredCurrency($event)" class="form-select bg-success rounded-pill">
+                    <option selected>$</option>
+                    <option>R$</option>
+                    <option>US$</option>
+                    <option>€$</option>
+                    <option>£$</option>
+                </select>
+                <span>
+                    <input (change)="selectDesiredCurrencyValue($event)" type="text" class="form-control" [value]="desiredCurrencyValue">
+                </span>
+            </span>
+            <span id="continue">
+                <button (click)="simulateTransaction()" type="button" class="btn btn-dark" data-bs-toggle="tooltip" title="Convert between currencies">
+                    Continue
+                </button>
+            </span>
+        </h2>
+        <ng-template [ngIf]="displaySummary">
+            <div class="card info">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Before transaction</th>
+                            <th>After transaction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{exchangeCurrency}} {{exchangeCurrencyBalance}}</th>
+                            <th>{{exchangeCurrency}} {{newExchangeCurrencyBalance}}</th>
+                        </tr>
+                        <tr>
+                            <th>{{desiredCurrency}} {{desiredCurrencyBalance}}</th>
+                            <th>{{desiredCurrency}} {{newDesiredCurrencyBalance}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card info table-bellow" id="summary">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Transaction details</th>
+                            <th>Transaction values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Desired currency:</td>
+                            <td>{{desiredCurrency}}</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Exchange currency:</td>
+                            <td>{{exchangeCurrency}}</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Provided amount:</td>
+                            <td>{{exchangeCurrencyValue}}</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Commercial quotation:</td>
+                            <td>{{quotation}}</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Transaction fees:</td>
+                            <td>{{fee}}</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Expected result:</td>
+                            <td>{{desiredCurrencyValue}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card info table-bellow">
+                <span>
+                    <h3 id="finish-text">Do you want to proceed with the transaction?</h3>
+                    <button (click)="executeTransaction()" type="button" id="proceed" class="btn btn-warning finish-request" data-bs-toggle="tooltip" title="Convert between currencies">
+                        Proceed
+                    </button>
+                    <a class="nav-item" routerLink="/wallet">
+                        <button type="button" class="btn btn-dark finish-request" data-bs-toggle="tooltip" title="Convert between currencies">
+                            Cancel
+                        </button>
+                    </a>
+                </span>
+            </div>
+        </ng-template>
+    </div>
+</div>

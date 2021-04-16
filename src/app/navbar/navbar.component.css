@@ -1,0 +1,25 @@
+.menu-bar {
+    margin: 1%;
+    text-align: center;
+}
+
+.menu-button {
+    width: 20%;
+    color: black;
+    font-weight: bold;
+    margin-right: 5%;
+    font-size: 140%;
+}
+
+.menu-button-icon {
+    width: 20%;
+    margin-right: 5%;
+}
+
+#menu {
+    margin-top: 1%;
+}
+
+#withdraw-button {
+    margin-right: 0;
+}

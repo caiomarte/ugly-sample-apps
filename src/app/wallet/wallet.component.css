@@ -1,0 +1,46 @@
+.currency-bar {
+    margin: 1%;
+}
+
+.currency-badge {
+    width: 25%;
+    float: left;
+}
+
+.currency {
+    width: 45%;
+    text-align: left;
+}
+
+.currency-balance {
+    color: black;
+    margin-left: 5%;
+}
+
+.currency-button {
+    width: 12%;
+    color: black;
+    font-weight: bold;
+    margin: .2% 0 0 1.5%;
+    font-size: 35%;
+}
+
+.currency-button-icon {
+    width: 20%;
+}
+
+.buy-button {
+    background-color: greenyellow;
+}
+
+.sell-button {
+    background-color: gold;
+}
+
+.deposit-button {
+    background-color: lightskyblue;
+}
+
+.withdraw-button {
+    background-color: lightcoral;
+}

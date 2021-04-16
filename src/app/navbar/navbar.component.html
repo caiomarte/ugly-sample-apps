@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card bg-dark menu-bar">
+        <div class="card-body">
+            <a class="nav-item" routerLink="/wallet">
+                <button type="button" class="btn btn-light menu-button" data-bs-toggle="tooltip" title="View current balance">
+                    <img class="menu-button-icon" src="/assets/icons/wallet.svg">
+                    Wallet
+                </button>
+            </a>
+            <a class="nav-item" routerLink="/exchange">
+                <button type="button" class="btn btn-light menu-button" data-bs-toggle="tooltip" title="Convert between currencies">
+                    <img class="menu-button-icon" src="/assets/icons/exchange.svg">
+                    Exchange
+                </button>
+            </a>
+            <span tabindex="0" data-bs-toggle="tooltip" title="Deposits are disabled for now">
+                <button type="button" class="btn btn-light menu-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for R$">
+                    <img class="menu-button-icon" src="/assets/icons/deposit.svg">
+                    Deposit
+                </button>
+            </span>
+            <span tabindex="0" data-bs-toggle="tooltip" title="Withdraws are disabled for now">
+                <button type="button" id="withdraw-button" class="btn btn-light menu-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for R$">
+                    <img class="menu-button-icon" src="/assets/icons/withdraw.svg">
+                    Withdraw
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
