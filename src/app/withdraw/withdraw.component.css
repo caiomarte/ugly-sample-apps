@@ -1,0 +1,75 @@
+td {
+    text-align: center;
+}
+
+.btn {
+    width: 10%;
+}
+
+.card {
+    text-align: center;
+}
+
+.balance {
+    margin-right: 10%;
+    margin-left: -13%;
+}
+
+.info {
+    text-align: center;
+    width: 83%;
+    margin-left: 8.5%;
+}
+
+.table-bellow {
+    margin-top: 1%;
+}
+
+.bg-light {
+    color: black;
+    width: 30%;
+}
+
+.form-select {
+    width: 30%;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-right: 5%;
+}
+
+.form-control {
+    width: 65%;
+}
+
+.finish-request {
+    width: 20%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+#desired {
+    width: 95%;
+}
+
+#continue {
+    margin-left: 5%;
+}
+
+#effectuate {
+    float: right;
+}
+
+#exchange-icon {
+    width: 10%;
+}
+
+#proceed {
+    color: white;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+#finish-text {
+    margin-top: 1%;
+}

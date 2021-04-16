@@ -6,6 +6,10 @@ td {
     text-align: center;
 }
 
+.btn {
+    width: 10%;
+}
+
 .balance {
     margin-right: 10%;
     margin-left: -13%;

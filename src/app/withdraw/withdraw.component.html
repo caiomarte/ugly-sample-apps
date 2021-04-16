@@ -1,0 +1,31 @@
+
+<div class="card bg-secondary currency-bar">
+    <div class="card-body">
+        <h2>
+            <span class="badge bg-light">
+                <select (change)="selectCurrency($event)" class="form-select bg-success rounded-pill">
+                    <option selected>$</option>
+                    <option>R$</option>
+                    <option>US$</option>
+                    <option>€$</option>
+                    <option>£$</option>
+                </select>
+                <span>
+                    <input (change)="selectValue($event)" type="text" class="form-control">
+                </span>
+            </span>
+            <span id="continue">
+                <button (click)="withdraw()" type="button" class="btn btn-light" data-bs-toggle="tooltip" title="Convert between currencies">
+                    Withdraw
+                </button>
+            </span>
+        </h2>
+    </div>
+</div>
+<div class="card bg-secondary currency-bar">
+    <div class="card-body">
+        <h2 class="bg-success" style="color:white;">
+            {{result}}
+        </h2>
+    </div>
+</div>

@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrandComponent } from './brand/brand.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WalletComponent } from './wallet/wallet.component';
-import { ExchangeComponent } from './exchange/exchange.component';
+import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawComponent } from './withdraw/withdraw.component';
 
 const appRoutes: Routes = [
   { path: '', component: WalletComponent },
   { path: 'wallet', component: WalletComponent },
-  { path: 'exchange', component: ExchangeComponent }
+  { path: 'deposit', component: DepositComponent },
+  { path: 'withdraw', component: WithdrawComponent }
 ];
 
 @NgModule({
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     BrandComponent,
     NavbarComponent,
     WalletComponent,
-    ExchangeComponent,
+    DepositComponent,
+    WithdrawComponent
   ],
   imports: [
     BrowserModule,

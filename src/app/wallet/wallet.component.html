@@ -3,7 +3,7 @@
         <h2>
             <span class="badge bg-light currency">
                 <span class="badge rounded-pill bg-success currency-badge">R$</span>
-                <span class="currency-balance">500.00</span>
+                <span class="currency-balance">{{real}}</span>
             </span>
             <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
                 <button type="button" class="btn currency-button buy-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for R$">
@@ -17,14 +17,14 @@
                     <img class="currency-button-icon" src="/assets/icons/sell.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Deposits are disabled for now">
-                <button type="button" class="btn currency-button deposit-button disabled" data-bs-toggle="tooltip" title="Add money from a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="R$" type="button" class="disabled btn currency-button deposit-button" data-bs-toggle="tooltip" title="Add money from a bank account">
                     DEPOSIT<br>
                     <img class="currency-button-icon" src="/assets/icons/deposit.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Withdraws are disabled for now">
-                <button type="button" class="btn currency-button withdraw-button disabled" data-bs-toggle="tooltip" title="Transfer money to a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="R$" type="button" class="disabled btn currency-button withdraw-button" data-bs-toggle="tooltip" title="Transfer money to a bank account">
                     WITHDRAW<br>
                     <img class="currency-button-icon" src="/assets/icons/withdraw.svg">
                 </button>
@@ -37,7 +37,7 @@
         <h2>
             <span class="badge bg-light currency">
                 <span class="badge rounded-pill bg-success currency-badge">US$</span>
-                <span class="currency-balance">500.00</span>
+                <span class="currency-balance">{{dolar}}</span>
             </span>
             <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
                 <button type="button" class="btn currency-button buy-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for US$">
@@ -51,14 +51,14 @@
                     <img class="currency-button-icon" src="/assets/icons/sell.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Deposits are disabled for now">
-                <button type="button" class="btn currency-button deposit-button disabled" data-bs-toggle="tooltip" title="Add money from a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="US$" type="button" class="disabled btn currency-button deposit-button" data-bs-toggle="tooltip" title="Add money from a bank account">
                     DEPOSIT<br>
                     <img class="currency-button-icon" src="/assets/icons/deposit.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Withdraws are disabled for now">
-                <button type="button" class="btn currency-button withdraw-button disabled" data-bs-toggle="tooltip" title="Transfer money to a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="US$" type="button" class="disabled btn currency-button withdraw-button" data-bs-toggle="tooltip" title="Transfer money to a bank account">
                     WITHDRAW<br>
                     <img class="currency-button-icon" src="/assets/icons/withdraw.svg">
                 </button>
@@ -71,7 +71,7 @@
         <h2>
             <span class="badge bg-light currency">
                 <span class="badge rounded-pill bg-success currency-badge">€$</span>
-                <span class="currency-balance">500.00</span>
+                <span class="currency-balance">{{euro}}</span>
             </span>
             <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
                 <button type="button" class="btn currency-button buy-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for €$">
@@ -85,14 +85,14 @@
                     <img class="currency-button-icon" src="/assets/icons/sell.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Deposits are disabled for now">
-                <button type="button" class="btn currency-button deposit-button disabled" data-bs-toggle="tooltip" title="Add money from a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
+                <button value="€$" type="button" class="disabled btn currency-button deposit-button" data-bs-toggle="tooltip" title="Add money from a bank account">
                     DEPOSIT<br>
                     <img class="currency-button-icon" src="/assets/icons/deposit.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Withdraws are disabled for now">
-                <button type="button" class="btn currency-button withdraw-button disabled" data-bs-toggle="tooltip" title="Transfer money to a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
+                <button value="€$" type="button" class="disabled btn currency-button withdraw-button" data-bs-toggle="tooltip" title="Transfer money to a bank account">
                     WITHDRAW<br>
                     <img class="currency-button-icon" src="/assets/icons/withdraw.svg">
                 </button>
@@ -105,7 +105,7 @@
         <h2>
             <span class="badge bg-light currency">
                 <span class="badge rounded-pill bg-success currency-badge">£$</span>
-                <span class="currency-balance">500.00</span>
+                <span class="currency-balance">{{pound}}</span>
             </span>
             <span tabindex="0" data-bs-toggle="tooltip" title="Purchases are disabled for now">
                 <button type="button" class="btn currency-button buy-button disabled" data-bs-toggle="tooltip" title="Exchange other currency for £$">
@@ -119,14 +119,14 @@
                     <img class="currency-button-icon" src="/assets/icons/sell.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Deposits are disabled for now">
-                <button type="button" class="btn currency-button deposit-button disabled" data-bs-toggle="tooltip" title="Add money from a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="£$" type="button" class="disabled btn currency-button deposit-button" data-bs-toggle="tooltip" title="Add money from a bank account">
                     DEPOSIT<br>
                     <img class="currency-button-icon" src="/assets/icons/deposit.svg">
                 </button>
             </span>
-            <span tabindex="0" data-bs-toggle="tooltip" title="Withdraws are disabled for now">
-                <button type="button" class="btn currency-button withdraw-button disabled" data-bs-toggle="tooltip" title="Transfer money to a bank account">
+            <span tabindex="0" data-bs-toggle="tooltip" title="Sales are disabled for now">
+                <button value="£$" type="button" class="disabled btn currency-button withdraw-button" data-bs-toggle="tooltip" title="Transfer money to a bank account">
                     WITHDRAW<br>
                     <img class="currency-button-icon" src="/assets/icons/withdraw.svg">
                 </button>
